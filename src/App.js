@@ -1,23 +1,19 @@
-import logo from './logo.svg';
+import logo from './myAvatar.PNG';
 import './App.css';
+import { Accordion, AccordionSummary, ExpandMoreIcon, Typography, AccordionDetails, Button } from '@mui/material';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="App-sidebar">
+        <div className="App-sidebar-info">
+          <figure className="App-sidebar-info-avatar">
+            <img src={logo} alt="logo" className='App-avatar'/>
+          </figure>
+          <div className="App-sidebar-info-name">Desmond Zhu</div>
+          <div className="App-sidebar-info-title">Software Engineer</div>
+          </div>
+        </div>
     </div>
   );
 }
