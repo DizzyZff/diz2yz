@@ -34,7 +34,7 @@ function App() {
             <div className="App-sidebar-info-contacts hidden">
               <div className="App-sidebar-info-contacts-item">
                 <GitHubIcon className="App-sidebar-info-contacts-item-icon"/>
-                <a href="www.github.com/dizzyZff" className="App-sidebar-info-contacts-item-link">Github</a>
+                <a href="https://www.github.com/dizzyZff" className="App-sidebar-info-contacts-item-link">Github</a>
                 </div>
               <div className="App-sidebar-info-contacts-item">
                 <EmailIcon className="App-sidebar-info-contacts-item-icon" />
@@ -59,7 +59,7 @@ function App() {
 
       <div className="App-content">
         <div className="App-content-banner">
-
+              
         </div>     
             
         </div>
