@@ -2,6 +2,8 @@ import logo from './myAvatar.PNG';
 import './App.css';
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import ArrowDropUpIcon from '@mui/icons-material/ArrowDropUp';
+import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
+import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import EmailIcon from '@mui/icons-material/Email';
 
@@ -59,7 +61,16 @@ function App() {
 
       <div className="App-content">
         <div className="App-content-banner">
-              
+              <button className="App-content-banner-button-left">
+                <ArrowBackIosNewIcon className="App-content-banner-left-icon"/>
+              </button>
+              <div className="App-content-banner-item">
+                <image src={logo} alt="logo" className="App-content-banner-item-image"/>
+                <div className="App-content-banner-item-name">Item 1</div>
+              </div>
+              <button className="App-content-banner-button-right">
+                <ArrowForwardIosIcon className="App-content-banner-right-icon"/>
+              </button>
         </div>     
             
         </div>
