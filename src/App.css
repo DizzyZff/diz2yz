@@ -16,15 +16,18 @@
   height: 100%;
   background: #282c34;
   color: white;
-  padding: 20px;
+  padding: 0px;
+  padding-bottom: 20px;
+  padding-top: 20px;
 }
 
 .App-sidebar-info {
-  display: flex;
+  display: absolute;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 100%;
+  
 }
 
 .App-sidebar-info-avatar {
@@ -54,22 +57,91 @@
   margin-bottom: 10px;
 }
 
+.App-sidebar-info-more-button {
+  background: #282c34;
+  border: 1px solid #282c34;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.App-sidebar-info-more-button:hover {
+  background: #282c34;
+  border: 1px solid #282c34;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.App-sidebar-info-contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.App-sidebar-info-more-button-collapse {
+  background: #282c34;
+  border: 1px solid #282c34;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: none;
+}
+
+.App-sidebar-info-contacts-item-link{
+  text-decoration: none;
+  color: white;
+}
+
+.App-sidebar-info-contacts-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.App-content{
+  position: absolute;
+  left: 200px;
+  width: calc(100% - 200px);
+  height: 100%;
+  background: #393e47;
+  color: white;
+  padding: 0px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+.App-content-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.App-content-header-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-right: 20px;
+}
+
+.hidden{
+  display: none;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+
 
 .App-link {
   color: #61dafb;
