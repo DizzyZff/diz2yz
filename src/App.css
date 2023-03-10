@@ -126,6 +126,13 @@
   padding: 20px;
 }
 
+.slick-slider {
+  position: relative;
+  margin: 0 auto;
+  width: 80%;
+  height: 300px;
+}
+
 .App-content-banner-button-left {
   background: #282c34;
   border: 1px solid #282c34;
